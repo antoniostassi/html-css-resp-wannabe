@@ -3,13 +3,34 @@
     outline: 1px solid red;
 } */
 
-@media screen and (max-width:768px){
+/* 
+Il .container di default ha una larghezza fissa di 1140px.
+
+Se non definiamo il 100% per tutte le grandezze dello schermo al di sotto di quella cifra,
+il container sborderà verso l'esterno facendo apparire una scrollbar orizzontale.
+
+Non possiamo definire di default il container a larghezza 100% perché altrimenti per grandezze di schermo superiori a 1140px, 
+continuerebbe a crescere. Risultato che non vogliamo.
+
+Dunque la situazione ideale è quella scritta di seguito.
+*/
+
+@media screen and (max-width:1140px){
 
     .container{
         width:100%;
     }
 
 }
+
+/* @media screen and (max-width:768px){
+
+    .container{
+        width:100%;
+    }
+
+} */
+/* La Media Query per 768px non serve più perché ereditata dalla Media Query soprastante */ 
 
 @media screen and (max-width:480px){
 
