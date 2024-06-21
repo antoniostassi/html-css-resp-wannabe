@@ -15,6 +15,8 @@ continuerebbe a crescere. Risultato che non vogliamo.
 Dunque la situazione ideale è quella scritta di seguito.
 */
 
+/* Tablet */
+
 @media screen and (max-width:1140px){
 
     .container{
@@ -32,6 +34,8 @@ Dunque la situazione ideale è quella scritta di seguito.
 } */
 /* La Media Query per 768px non serve più perché ereditata dalla Media Query soprastante */ 
 
+/* Smartphone */
+
 @media screen and (max-width:480px){
 
     .row {
@@ -43,7 +47,21 @@ Dunque la situazione ideale è quella scritta di seguito.
     }
 
     .col:not(:first-of-type){
-        margin-top:100px;
+        margin-top:50px;
+    }
+
+    .why-us{
+        background-color:#222222;
+        margin-bottom:0;
+    }
+
+    .steps{
+        margin:0;
+        padding:0;
+    }
+
+    .container{
+        padding:3rem 1rem;
     }
 
 }
