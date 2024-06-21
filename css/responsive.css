@@ -1,12 +1,28 @@
-
-/* *{
+/* 
+*{
     outline: 1px solid red;
 } */
 
 @media screen and (max-width:768px){
 
+    .container{
+        width:100%;
+    }
+
 }
 
 @media screen and (max-width:480px){
+
+    .row {
+        flex-wrap:wrap;
+    }
+
+    .col{
+        min-width:100%;
+    }
+
+    .col:not(:first-of-type){
+        margin-top:100px;
+    }
 
 }
